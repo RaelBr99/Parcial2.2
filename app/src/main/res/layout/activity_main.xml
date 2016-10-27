@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rael.parcial22.MainActivity"
+    android:background="@color/colorAccent">
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/st"
+        android:onClick="st" />
+
+    <TextView
+        android:text="Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/st"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/st"
+        android:layout_alignStart="@+id/st"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:id="@+id/dif" />
+
+    <TextView
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="00:30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/st"
+        android:layout_alignEnd="@+id/st"
+        android:id="@+id/timer"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Que empiece el juego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView4"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4"
+        android:layout_marginTop="25dp"
+        android:id="@+id/num1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/num1"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/num2"
+        android:layout_alignBottom="@+id/num2"
+        android:layout_toRightOf="@+id/num2"
+        android:layout_toEndOf="@+id/num2"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/num2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/resp"
+        android:layout_toRightOf="@+id/timer"
+        android:layout_toEndOf="@+id/timer"
+        android:background="@android:color/background_light" />
+
+    <Button
+        android:text="Next!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/resp"
+        android:layout_alignStart="@+id/resp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/next" />
+
+    <TextView
+        android:text="Correctas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="24sp"
+        android:layout_below="@+id/next"
+        android:layout_alignLeft="@+id/num1"
+        android:layout_alignStart="@+id/num1"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:text="Incorrectas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignLeft="@+id/resp"
+        android:layout_alignStart="@+id/resp" />
+
+    <TextView
+        android:text="ninguna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/corre"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9" />
+
+    <TextView
+        android:text="Ninguna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/corre"
+        android:layout_toRightOf="@+id/dif"
+        android:layout_toEndOf="@+id/dif"
+        android:id="@+id/incorre"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView10"
+        android:layout_toStartOf="@+id/textView10"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/reset" />
+</RelativeLayout>
